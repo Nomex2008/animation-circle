@@ -1,0 +1,2 @@
+CSS animation и @keyframes за 12 минут. Подробный разбор CSS свойств анимации + шпаргалка.
+https://www.youtube.com/watch?v=GKgOOuTL0po&list=PLM6XATa8CAG4F9nAIYNS5oAiPotxwLFIr&index=26

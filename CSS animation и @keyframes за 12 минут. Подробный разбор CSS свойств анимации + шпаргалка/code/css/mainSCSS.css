@@ -1,0 +1,58 @@
+body {
+  background-color: rgb(1, 0, 3);
+}
+
+.wrapper {
+  padding: 25% 25%;
+}
+
+.content__circle {
+  width: 100px;
+  height: 100px;
+  background-color: wheat;
+  border-radius: 50%;
+  position: relative;
+  left: 0;
+  -webkit-animation-name: wheat-circle;
+          animation-name: wheat-circle;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+  -webkit-animation: wheat-circle 3s linear infinite alternate 2s;
+          animation: wheat-circle 3s linear infinite alternate 2s;
+}
+.content:hover .content__circle {
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+}
+
+@-webkit-keyframes wheat-circle {
+  0% {
+    left: 0;
+  }
+  50% {
+    border-radius: 0;
+  }
+  100% {
+    left: 500px;
+  }
+}
+
+@keyframes wheat-circle {
+  0% {
+    left: 0;
+  }
+  50% {
+    border-radius: 0;
+  }
+  100% {
+    left: 500px;
+  }
+}

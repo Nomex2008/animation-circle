@@ -1,0 +1,42 @@
+body{
+    background-color: rgb(1, 0, 3);
+}
+
+.wrapper {
+    padding: 25% 25%;
+}
+.content {
+
+		&__circle {
+            width: 100px;
+            height: 100px;
+            background-color: wheat;
+            border-radius: 50%;
+            position: relative;
+            left: 0;
+            animation-name: wheat-circle;
+            animation-duration: 3s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            animation-delay: 2s;
+
+            animation: wheat-circle 3s linear infinite alternate 2s;
+		}
+
+        &:hover &__circle{
+            animation-play-state: paused;
+        }
+}
+
+@keyframes wheat-circle{
+    0%{
+        left: 0;
+    }
+    50%{
+        border-radius: 0;
+    }
+    100%{
+        left: 500px;
+    }
+}
